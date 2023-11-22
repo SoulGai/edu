@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>top.testeru</groupId>
+    <artifactId>edu-bom</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>edu-bom</name>
+    <!-- 打包方式改为pom -->
+    <packaging>pom</packaging>
+    <description>统一的依赖管理</description>
+    <properties>
+        <java.version>17</java.version>
+        <cloud.version>2022.0.3</cloud.version>
+        <boot.version>3.1.5</boot.version>
+    </properties>
+
+
+    <dependencyManagement>
+        <dependencies>
+            <!-- Spring cloud 依赖 -->
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-parent</artifactId>
+                <version>${boot.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <!-- common 工具类依赖打包管理 -->
+            <dependency>
+                <groupId>top.testeru</groupId>
+                <artifactId>edu-common</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+
+    <dependencies>
+
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <image>
+                        <builder>paketobuildpacks/builder-jammy-base:latest</builder>
+                    </image>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
