@@ -4,24 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e3265f3-0899-4a7f-9fdb-4773b335f9ad" name="Changes" comment="删除隐藏文件">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/edu-ad/edu-ad-api/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/edu-ad/edu-ad-impl/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/edu-ad/edu-ad-impl/src/test/java/top/testeru/generator/CodeGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/edu-config/src/main/resources/application.yml" afterDir="false" />
+    <list default="true" id="4e3265f3-0899-4a7f-9fdb-4773b335f9ad" name="Changes" comment="添加依赖">
+      <change afterPath="$PROJECT_DIR$/edu-ad/edu-ad-impl/src/main/java/top/testeru/ad/controller/PromotionAdController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/edu-ad/edu-ad-impl/src/main/java/top/testeru/ad/controller/PromotionSpaceController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/edu-ad/edu-ad-impl/src/main/java/top/testeru/ad/mapper/PromotionAdMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/edu-ad/edu-ad-impl/src/main/java/top/testeru/ad/mapper/PromotionSpaceMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/edu-ad/edu-ad-impl/src/main/java/top/testeru/ad/mapper/xml/PromotionAdMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/edu-ad/edu-ad-impl/src/main/java/top/testeru/ad/mapper/xml/PromotionSpaceMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/edu-ad/edu-ad-impl/src/main/java/top/testeru/ad/po/PromotionAd.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/edu-ad/edu-ad-impl/src/main/java/top/testeru/ad/po/PromotionSpace.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/edu-ad/edu-ad-impl/src/main/java/top/testeru/ad/service/IPromotionAdService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/edu-ad/edu-ad-impl/src/main/java/top/testeru/ad/service/IPromotionSpaceService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/edu-ad/edu-ad-impl/src/main/java/top/testeru/ad/service/impl/PromotionAdServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/edu-ad/edu-ad-impl/src/main/java/top/testeru/ad/service/impl/PromotionSpaceServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu-ad/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/edu-ad/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu-ad/src/main/java/top/testeru/edu/ad/EduAdApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu-ad/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu-ad/src/test/java/top/testeru/edu/ad/EduAdApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu-bom/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/edu-bom/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu-config/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/edu-config/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu-config/src/main/java/top/testeru/edu/config/EduConfigApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu-config/src/main/java/top/testeru/edu/config/EduConfigApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu-config/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu-eureka/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/edu-eureka/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu-eureka/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/edu-eureka/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/edu-gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edu-ad/edu-ad-impl/src/test/java/top/testeru/generator/CodeGenerate.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu-ad/edu-ad-impl/src/test/java/top/testeru/generator/CodeGenerate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edu-ad/edu-ad-impl/target/test-classes/top/testeru/generator/CodeGenerator.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,11 +37,25 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="101" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "SoulGai"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="f3434dee-c416-4562-ba4d-b00f6f749369" />
+        <option name="url" value="https://github.com/SoulGai/edu.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -52,14 +64,18 @@
   &quot;associatedIndex&quot;: 1
 }</component>
   <component name="ProjectId" id="2YOX72Pss8bpwsCtzWA4wJTQ7si" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Application.CodeGenerate.executor": "Run",
     "Application.Generate.executor": "Run",
     "JUnit.CodeGenerator.testSimple.executor": "Run",
     "Maven.edu-bom [clean].executor": "Run",
@@ -74,9 +90,10 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "Spring Boot.EduConfigApplication.executor": "Run",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "dev",
+    "git-widget-placeholder": "release-1.1.0",
     "jdk.selected.JAVA_MODULE": "21",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/gai/Documents/JavaProject/edu/edu-ad/edu-ad-impl/src/main/java/top/testeru/ad/controller",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -94,7 +111,25 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.CodeGenerator.testSimple">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/edu-ad/edu-ad-impl/src/main/java/top/testeru/ad/controller" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.CodeGenerate">
+    <configuration name="CodeGenerate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="top.testeru.generator.CodeGenerate" />
+      <module name="edu-ad-impl" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="top.testeru.generator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Generate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="top.testeru.generator.Generate" />
       <module name="edu-ad-impl" />
@@ -168,6 +203,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CodeGenerate" />
         <item itemvalue="JUnit.CodeGenerator.testSimple" />
         <item itemvalue="Application.Generate" />
       </list>
@@ -190,8 +226,17 @@
       <updated>1700397428244</updated>
       <workItem from="1700397429246" duration="1735000" />
       <workItem from="1700400217549" duration="4507000" />
-      <workItem from="1702178334174" duration="10651000" />
+      <workItem from="1702178334174" duration="12126000" />
     </task>
+    <task id="LOCAL-00001" summary="添加依赖">
+      <option name="closed" value="true" />
+      <created>1702217864981</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1702217864981</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -202,13 +247,26 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="release-1.1.0" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
       <path value="$PROJECT_DIR$/edu-ad" />
@@ -221,7 +279,8 @@
       <path value="$PROJECT_DIR$/edu-gateway" />
     </ignored-roots>
     <MESSAGE value="删除隐藏文件" />
-    <option name="LAST_COMMIT_MESSAGE" value="删除隐藏文件" />
+    <MESSAGE value="添加依赖" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加依赖" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -7,6 +7,7 @@ import com.baomidou.mybatisplus.generator.config.DataSourceConfig;
 import com.baomidou.mybatisplus.generator.config.OutputFile;
 import com.baomidou.mybatisplus.generator.config.po.LikeTable;
 import com.baomidou.mybatisplus.generator.config.rules.DbColumnType;
+import com.baomidou.mybatisplus.generator.engine.BeetlTemplateEngine;
 import com.baomidou.mybatisplus.generator.engine.FreemarkerTemplateEngine;
 import com.baomidou.mybatisplus.generator.fill.Column;
 import org.apache.commons.lang.StringUtils;
@@ -24,12 +25,12 @@ import java.util.Scanner;
  * @Date: 2023/12/10
  */
 public class CodeGenerate {
-
+    //promotion_ad
 
     public static void main(String[] args) {
 
         //jdbc 路径
-        String url = "jdbc:mysql://127.0.0.1:3306/edu?characterEncoding=UTF-8&useUnicode=true&useSSL=false&serverTimezone=GMT";
+        String url = "jdbc:mysql://127.0.0.1:3306/edu_ad?characterEncoding=UTF-8&useUnicode=true&useSSL=false&serverTimezone=GMT";
         String username = "edu";
         String password = "Toturial@#2023";
         String author = "gai";
@@ -58,7 +59,7 @@ public class CodeGenerate {
                                 //作者名
                                 .author(scanner.apply("请输入作者名称？"))
                                 //	开启 kotlin 模式
-                                .enableKotlin()
+                                //.enableKotlin()
                                 //开启 swagger 模式
                                 .enableSwagger()
                                 //时间策略
@@ -74,7 +75,7 @@ public class CodeGenerate {
                                 //父包名
                                 .parent(scanner.apply("请输入父包名："))
                                 //父包模块名
-                                .moduleName(scanner.apply("请输入父包模块名："))
+                                //.moduleName(scanner.apply("请输入父包模块名："))
                                 //entity包名
                                 .entity("po")
                                 //service包名
@@ -127,11 +128,11 @@ public class CodeGenerate {
                                 //.addFieldSuffix("_flag")
 
                 )
-                /*
-                    模板引擎配置，默认 Velocity 可选模板引擎 Beetl 或 Freemarker
-                   .templateEngine(new BeetlTemplateEngine())
+
+                    //模板引擎配置，默认 Velocity 可选模板引擎 Beetl 或 Freemarker
+                   //.templateEngine(new BeetlTemplateEngine())
                    .templateEngine(new FreemarkerTemplateEngine())
-                 */
+
                 .execute();
 
 
