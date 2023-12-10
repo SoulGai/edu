@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="edu-boss" />
+        <module name="edu-ad-impl" />
+        <module name="edu-ad-api" />
+        <module name="edu-eureka" />
+        <module name="edu-front" />
+        <module name="edu-gateway" />
+        <module name="edu-config" />
+      </profile>
+      <profile name="Annotation profile for edu-common" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <option name="mapstruct.verbose" value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.30/lombok-1.18.30.jar" />
+        </processorPath>
+        <module name="edu-common" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="edu-ad" options="" />
+      <module name="edu-boss" options="-parameters" />
+      <module name="edu-common" options="-parameters -Amapstruct.verbose=true" />
+      <module name="edu-config" options="" />
+      <module name="edu-front" options="-parameters" />
+      <module name="edu-gateway" options="-parameters" />
+    </option>
+  </component>
+</project>

@@ -7,12 +7,12 @@
     <parent>
         <groupId>top.testeru</groupId>
         <artifactId>edu-bom</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
+        <version>1.0.1-SNAPSHOT</version>
     </parent>
 
     <!--<groupId>top.testeru</groupId>-->
     <artifactId>edu-eureka</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0.1-SNAPSHOT</version>
     <name>edu-eureka</name>
     <description>edu-eureka</description>
     <properties>

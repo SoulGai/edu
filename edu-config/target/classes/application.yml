@@ -1,0 +1,23 @@
+server:
+  # 服务启动端口号
+  port: 9006
+
+
+spring:
+  application:
+    name: edu-config-boot
+  cloud:
+    config:
+      server:
+        # 本地存储
+        # native:
+        #  search-locations: classpath:/shared
+        git:
+          #配置git服务地址
+          uri: https://gitee.com/testeru/edu-repo.git
+          #配置git用户名
+          username: 18612725214@163.com
+          #配置git密码
+          password: feng5078762LOVE
+          default-label: master # 使用的默认分支，默认为 master
+

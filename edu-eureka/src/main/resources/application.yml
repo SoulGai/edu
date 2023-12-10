@@ -1,23 +1,20 @@
-# ?????
 server:
+  # 项目端口号
   port: 8761
-# ??
 
-#???????
+#服务的项目名称
 spring:
   application:
     name: edu-eureka-boot
 
-#eureka??
+#eureka配置
 eureka:
   instance:
-    # ?????
+    # 当前主机名
     hostname: localhost
   client:
-    # ???????
+    # 当前项目不注册
     fetch-registry: false
     register-with-eureka: false
     service-url:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
-
-
